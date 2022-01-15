@@ -1,0 +1,27 @@
+name: FactionsRaidTimes
+main: me.dkim19375.factionsraidtimes.FactionsRaidTimes
+version: ${pluginVersion}
+description: A plugin that prevents explosives during a certain period
+depend:
+  - PlaceholderAPI
+author: dkim19375
+api-version: 1.17
+
+commands:
+  factionsraidtimes:
+    description: Main command
+    aliases:
+      - frt
+      - factionsraidtime
+      - fraidtimes
+      - fraidtime
+
+permissions:
+  factionsraidtimes.command:
+    description: Command
+  factionsraidtimes.reload:
+    description: Reload config
+  factionsraidtimes.reset:
+    description: Reset data
+  factionsraidtimes.status:
+    description: View status
