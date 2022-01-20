@@ -19,8 +19,6 @@
 package me.dkim19375.factionsraidtimes.listener
 
 import me.dkim19375.factionsraidtimes.FactionsRaidTimes
-import net.kyori.adventure.text.Component
-import org.bukkit.Bukkit
 import org.bukkit.entity.EntityType
 import org.bukkit.event.*
 import org.bukkit.event.entity.EntityExplodeEvent
@@ -35,7 +33,9 @@ class ExplosionListener(private val plugin: FactionsRaidTimes) : Listener {
         if (entityType !in entityTypes) {
             return
         }
-        plugin.manager.raid ?: return
+        plugin.manager.raid?.let {
+            return@onEntityExplode
+        }
         `yield` = 0f
         blockList().clear()
     }
