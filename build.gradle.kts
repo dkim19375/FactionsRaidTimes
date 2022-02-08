@@ -36,8 +36,8 @@ license {
 repositories {
     mavenCentral()
     mavenLocal()
+    maven("https://repo.triumphteam.dev/snapshots/")
     maven("https://repo.dmulloy2.net/repository/public/")
-    maven("https://repo.mattstudios.me/artifactory/public")
     maven("https://papermc.io/repo/repository/maven-public/")
     maven("https://oss.sonatype.org/content/repositories/central")
     maven("https://oss.sonatype.org/content/repositories/snapshots")
