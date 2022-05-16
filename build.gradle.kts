@@ -55,7 +55,7 @@ dependencies {
 
     implementation("me.mattstudios:triumph-config:1.0.5-SNAPSHOT")
 
-    implementation("io.github.dkim19375:dkim-bukkit-core:3.3.37") {
+    implementation("io.github.dkim19375:dkim-bukkit-core:3.3.38") {
         exclude(group = "org.jetbrains.kotlin")
     }
     implementation("org.jetbrains.kotlin:kotlin-stdlib:$KT_VER") {
